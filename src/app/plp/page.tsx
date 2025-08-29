@@ -74,7 +74,7 @@ export default function PLPPage() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const { filters: fetchedFilters, total, products } = await fetchTotalAndPageProducts(filters, page);
+      const { total, products } = await fetchTotalAndPageProducts(filters, page);
       setProducts(products);
       setTotal(total);
     };
