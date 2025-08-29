@@ -19,23 +19,28 @@ interface Product {
     name: string;
   };
 }
-
+interface Filters {
+  categoryId?: number;
+  price_min?: number;
+  price_max?: number;
+  price?: number;
+  title?: string;
+}
 export default function PLPPage() {
   const { filters, setFilters, page, setPage } = usePLPStore();
   
   const [products, setProducts] = useState<Product[]>([]);
   const [total, setTotal] = useState<number>(0);
 
-  const fetchTotalAndPageProducts = async (filters: any, page: number) => {
+  const fetchTotalAndPageProducts = async (filters: Filters, page: number) => {
     const PAGE_SIZE = 9;
     try {
-      const baseParams = new URLSearchParams();
-      if (filters.categoryId) baseParams.append('categoryId', filters.categoryId.toString());
-      if (filters.price_min) baseParams.append('price_min', filters.price_min.toString());
-      if (filters.price_max) baseParams.append('price_max', filters.price_max.toString());
-      if (filters.price) baseParams.append('price', filters.price.toString());
-      if (filters.title) baseParams.append('title', filters.title);
-
+       const baseParams = new URLSearchParams();
+    if (filters.categoryId) baseParams.append('categoryId', filters.categoryId.toString());
+    if (filters.price_min) baseParams.append('price_min', filters.price_min.toString());
+    if (filters.price_max) baseParams.append('price_max', filters.price_max.toString());
+    if (filters.price) baseParams.append('price', filters.price.toString());
+    if (filters.title) baseParams.append('title', filters.title);
       const totalRes = await fetch(
         `https://api.escuelajs.co/api/v1/products/?${baseParams.toString()}`
       );
