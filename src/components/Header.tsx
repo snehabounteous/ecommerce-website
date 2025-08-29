@@ -10,11 +10,11 @@ import {
   IconUserCircle,
 } from "@tabler/icons-react";
 
-import logo from "../../assets/shopping-cart.png";
+import logo from "../assets/shopping-cart.png";
 import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/nextjs";
 import { useCartStore } from "@/stores/useCartStore";
-import SearchBar from "../../../ui/SearchBar";
-import CTAButtonLight from "../../../ui/CTAButtonLight";
+import SearchBar from "../ui/SearchBar";
+import CTAButtonLight from "../ui/CTAButtonLight";
 
 const Header = () => {
   const { openSignIn, openSignUp } = useClerk();

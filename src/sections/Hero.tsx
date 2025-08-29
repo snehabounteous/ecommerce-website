@@ -1,4 +1,4 @@
-import ProductCarousel from "../../ui/Carousel";
+import ProductCarousel from "../ui/Carousel";
 
 interface Product {
   id: number;

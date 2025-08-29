@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@/components/components/ui/button";
+import { Button } from "@/components/ui/button";
 import { useCartStore } from "@/stores/useCartStore";
 
 export default function CartPage() {

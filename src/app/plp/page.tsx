@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import { usePLPStore } from '@/stores/plpStrore';
-import FiltersSidebar from '@/components/components/FiltersSidebar';
-import ProductGrid from '@/components/components/ProductGrid';
-import PaginationControls from '@/components/components/PaginationControls';
+import FiltersSidebar from '@/components/FiltersSidebar';
+import ProductGrid from '@/components/ProductGrid';
+import PaginationControls from '@/components/PaginationControls';
 
 const PAGE_SIZE = 9;
 

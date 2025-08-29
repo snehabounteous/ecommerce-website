@@ -1,7 +1,7 @@
 "use client";
 
 import { IconChevronDown } from "@tabler/icons-react";  
-import CTAButtonLight from "../../../ui/CTAButtonLight";
+import CTAButtonLight from "../ui/CTAButtonLight";
 import { useEffect, useState } from "react";
 
 export interface Category {

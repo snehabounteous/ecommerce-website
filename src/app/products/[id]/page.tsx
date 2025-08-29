@@ -4,11 +4,11 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 
-import Loading from "../../../../ui/Loading";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/components/ui/card";
+import Loading from "../../../ui/Loading";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@radix-ui/react-separator";
 import { useCartStore } from "@/stores/useCartStore"; 
-import { Button } from "@/components/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 interface ProductDetail {
   id: number;

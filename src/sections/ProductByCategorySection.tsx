@@ -1,4 +1,4 @@
-import ProductByCategoryCarousel from "@/components/components/ProductByCategoryCarousel";
+import ProductByCategoryCarousel from "@/components/ProductByCategoryCarousel";
 import React from "react";
 
 

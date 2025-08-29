@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { useCategoryStore } from "@/stores/useCategoryStore";
-import ProductCarousel from "../../../ui/Carousel";
+import ProductCarousel from "../ui/Carousel";
 
 interface Product {
   id: number;

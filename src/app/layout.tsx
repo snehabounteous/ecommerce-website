@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import logo from '../assets/shopping-cart.png'
+import logo from '../assets/shopping-cart.png';
 
 import {
   ClerkProvider,
 } from '@clerk/nextjs'
-import Header from "@/components/components/Header";
-import Footer from "@/components/components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 
 const geistSans = Geist({

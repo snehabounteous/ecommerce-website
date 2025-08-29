@@ -1,8 +1,8 @@
 import Hero from "@/sections/Hero";
-import Categories from "@/components/components/Categories";
+import Categories from "@/components/Categories";
 import ProductByCategorySection from "@/sections/ProductByCategorySection";
 import Link from "next/link";
-import CTAButton from "../../ui/CTAButtonLight"; // Assuming you're using the CTAButton here
+import CTAButton from "../ui/CTAButtonLight"; // Assuming you're using the CTAButton here
 
 export default function Home() {
   return (

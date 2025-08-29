@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from "../../assets/shopping-cart.png";
+import logo from "../assets/shopping-cart.png";
 
 
 const Footer: React.FC = () => {
